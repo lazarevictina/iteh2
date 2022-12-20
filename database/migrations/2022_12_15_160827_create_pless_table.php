@@ -14,11 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('pless', function (Blueprint $table) {
-            $table->id();
-            $table->string("naziv");
-            $table->string("opis");
-            $table->string("zemljaPorekla");
-            $table->string("najpoznatijaNumera");
+            $table->id('id');
+            $table->string('naziv');
+            $table->string('opis');
+            $table->string('zemljaPorekla');
+            $table->string('najpoznatijaNumera');
             $table->timestamps();
         });
     }

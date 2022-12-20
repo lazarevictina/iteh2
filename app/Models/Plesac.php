@@ -10,7 +10,17 @@ use App\Models\Ples;
 
 class Plesac extends Model
 {
+
     use HasFactory;
+
+    protected $fillable = [
+        'jmbg',
+        'ime',
+        'prezime',
+        'eAdresa',
+        'trener_Id',
+        'ples_Id'
+    ];
 
     public function trener(){ //plesac pripada jednom treneru
         return $this->belongsTo(Trener::class);

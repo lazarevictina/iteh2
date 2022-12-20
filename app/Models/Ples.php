@@ -9,7 +9,14 @@ use App\Models\Plesac;
 
 class Ples extends Model
 {
+    protected $table = 'pless';
     use HasFactory;
+
+    protected $fillable =['naziv',
+        'opis',
+        'drzavaPorekla',
+        'najpoznatijaNumera'];
+
 
     public function plesaci(){
         return $this->hasMany(Plesac::class);

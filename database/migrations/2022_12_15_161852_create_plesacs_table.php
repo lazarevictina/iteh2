@@ -15,12 +15,12 @@ return new class extends Migration
     {
         Schema::create('plesacs', function (Blueprint $table) {
             $table->id();
-            $table->string("jmbg")->unique();
-            $table->string("ime");
-            $table->string("prezime");
-            $table->string("eAdresa");
-            $table->foreignId("trener_Id")->constrained("treners");
-            $table->foreignId("ples_Id")->constrained("pless");
+            $table->string('jmbg')->unique();
+            $table->string('ime');
+            $table->string('prezime');
+            $table->string('eAdresa');
+            $table->foreignId('trener_Id')->constrained('treners');
+            $table->foreignId('ples_Id')->constrained('pless');
             $table->timestamps();
         });
     }

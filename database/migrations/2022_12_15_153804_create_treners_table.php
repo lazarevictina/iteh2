@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('treners', function (Blueprint $table) { //nasa sema ima 2 polja tj 2 kolone
             $table->id();
-            $table->string("nazivSkole");
-            $table->integer("jmbg")->unique();
-            $table->string("imePrezime");
-            $table->integer("godineIskustva");
+            $table->string('nazivSkole');
+            $table->integer('jmbg')->unique();
+            $table->string('imePrezime');
+            $table->integer('godineIskustva');
             $table->timestamps(); //created_at i updated_at polja
         });
     }

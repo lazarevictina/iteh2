@@ -10,6 +10,8 @@ class Trener extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['nazivSkole', 'jmbg', 'imePrezime', 'godiste', 'godineIskustva'];
+
     public function plesaci(){
         return $this->hasMany(Plesac::class); //vraca za klasu Trener vise plesaca
         //tj vracamo sve one plesace koji pripadaju tom treneru
