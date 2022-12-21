@@ -24,7 +24,7 @@ class PlesacFactory extends Factory
         'prezime' => $this->faker->lastName(),
         'eAdresa'=> $this->faker->freeEmail(),
         'trener_Id' => Trener::factory(),
-        'ples_Id'=> Ples::factory()
+        'ples_Id'=> unique()->Ples::factory()
         ];
     }
 }
