@@ -17,12 +17,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        //$trener = new TrenerSeeder;
-        //$ples = new PlesSeeder;
+        $trener = new TrenerSeeder;
+        $ples = new PlesSeeder;
         $plesac = new PlesacSeeder;
 
-        //$trener->run();
-        //$ples->run();
+        $trener->run();
+        $ples->run();
         $plesac->run();
     }
 }

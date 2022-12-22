@@ -14,6 +14,13 @@ class ResourceTrener extends JsonResource
      */
     public function toArray($request) //vraca niz podataka koje zelimo da se prikazu za trenera
     {
-        return parent::toArray($request);
+        return [
+            'ID ' => $this->resource->id,
+            'Naziv škole ' => $this->resource->nazivSkole,
+            'JMBG ' => $this->resource->jmbg,
+            'Ime i prezime ' => $this->resource->imePrezime,
+            'Godište ' => $this->resource->godiste,
+            'Godine iskustva ' => $this->resource->godineIskustva
+        ];
     }
 }
